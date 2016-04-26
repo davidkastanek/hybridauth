@@ -1,0 +1,25 @@
+{
+    "name": "david/hybridauth",
+    "type": "library",
+    "description": "hybridauth/hybridauth integration into Nette Framework",
+    "keywords": ["nette", "hybridauth", "authentication"],
+    "authors": [
+        {
+            "name": "David Kaštánek",
+            "email": "kastanekdavid@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "kastanekdavid@gmail.com",
+        "issues": "https://github.com/kastanekdavid/hybridauth/issues"
+    },
+    "require": {
+        "nette/application": "*",
+        "hybridauth/hybridauth": "^2.6"
+    },
+    "autoload": {
+		"psr-0": {
+			"David\\HybridAuth\\": "src/"
+		}
+	}
+}
