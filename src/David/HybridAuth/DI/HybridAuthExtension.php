@@ -10,11 +10,11 @@ namespace David\HybridAuth\DI;
 class HybridAuthExtension extends \Nette\DI\CompilerExtension
 {
     /** @var array */
-    public $config = [];
+    public $defaults = [];
 
     public function loadConfiguration()
     {
-        $config = $this->getConfig($this->config);
+        $config = $this->getConfig($this->defaults);
 
         $builder = $this->getContainerBuilder();
         $builder->addDefinition($this->prefix('service'))
