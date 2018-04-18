@@ -7,8 +7,12 @@
 
 namespace David\HybridAuth;
 
-class Manager extends \Nette\Object
+use Nette\SmartObject;
+
+class Manager
 {
+    use SmartObject;
+
     /** @var \Hybrid_Auth */
     private $hybridAuth;
 

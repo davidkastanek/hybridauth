@@ -21,5 +21,10 @@
 		"psr-0": {
 			"David\\HybridAuth\\": "src/"
 		}
-	}
+	},
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    }
 }
