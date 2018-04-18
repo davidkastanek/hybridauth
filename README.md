@@ -1,18 +1,18 @@
-# David\HybridAuth
-[hybridauth/hybridauth](https://github.com/hybridauth/hybridauth) integration into Nette Framework.
+# Gutter\HybridAuth
+This is [hybridauth/hybridauth](https://github.com/hybridauth/hybridauth) integration for Nette Framework.
 
 ## Installation
 
-The best way to install David\HybridAuth is via [Composer](http://getcomposer.org/):
+The best way to install Gutter\HybridAuth is via [Composer](http://getcomposer.org/):
 ```
-$ composer require david/hybridauth
+$ composer require gutter/hybridauth
 ```
-## Configuration
-Shown below is the example configuration.
+## Usage
+You can use the HybridAuth as an extension.
 ```
 # config.neon
 extensions:
-    hybridAuth: David\HybridAuth\DI\HybridAuthExtension
+    hybridAuth: Gutter\HybridAuth\DI\HybridAuthExtension
 
 hybridAuth:
     base_url: https://myapp.com/auth/process
@@ -22,4 +22,10 @@ hybridAuth:
             keys:
                 id: [your-google-key]
                 secret: [your-google-secret]
+        Facebook:
+            enabled: true
+            keys:
+                id: [your-facebook-key]
+                secret: [your-facebook-secret]
+            scope: email
 ```
