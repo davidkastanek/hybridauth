@@ -14,6 +14,7 @@
         "issues": "https://github.com/kastanekdavid/hybridauth/issues"
     },
     "require": {
+        "php": "^7.2",
         "hybridauth/hybridauth": "^2.6",
         "nette/di": "^2.4"
     },
