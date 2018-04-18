@@ -1,6 +1,6 @@
 <?php
 
-namespace David\HybridAuth;
+namespace Gutter\HybridAuth;
 
 use Nette\SmartObject;
 

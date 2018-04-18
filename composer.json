@@ -1,7 +1,7 @@
 {
-    "name": "david/hybridauth",
+    "name": "gutter/hybridauth",
     "type": "library",
-    "description": "hybridauth/hybridauth integration into Nette Framework",
+    "description": "hybridauth/hybridauth integration for Nette Framework",
     "keywords": ["nette", "hybridauth", "authentication"],
     "authors": [
         {
@@ -14,12 +14,12 @@
         "issues": "https://github.com/kastanekdavid/hybridauth/issues"
     },
     "require": {
-        "nette/application": "*",
-        "hybridauth/hybridauth": "^2.6"
+        "hybridauth/hybridauth": "^2.6",
+        "nette/di": "^2.4"
     },
     "autoload": {
-		"psr-0": {
-			"David\\HybridAuth\\": "src/"
+		"psr-4": {
+			"Gutter\\HybridAuth\\": "src/"
 		}
 	},
     "config": {

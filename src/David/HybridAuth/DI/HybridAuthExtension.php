@@ -1,8 +1,11 @@
 <?php
 
-namespace David\HybridAuth\DI;
+namespace Gutter\HybridAuth\DI;
 
-class HybridAuthExtension extends \Nette\DI\CompilerExtension
+use Gutter\HybridAuth\Manager;
+use Nette\DI\CompilerExtension;
+
+class HybridAuthExtension extends CompilerExtension
 {
     /** @var array */
     public $defaults = [];
@@ -13,6 +16,6 @@ class HybridAuthExtension extends \Nette\DI\CompilerExtension
 
         $builder = $this->getContainerBuilder();
         $builder->addDefinition($this->prefix('service'))
-            ->setClass(\David\HybridAuth\Manager::class, [$config]);
+            ->setFactory(Manager::class, [$config]);
     }
 }
